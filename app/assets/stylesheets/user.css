@@ -1,0 +1,36 @@
+/* **********top**************** */
+body {
+  background-color: #f7f7f7;
+}
+.top-row {
+background-color: white;
+padding: 50px; 
+}
+
+.top-image {
+background-image: url('gorimepIMGL7701_TP_V.jpg');
+background-size: cover;
+height: 400px;
+opacity: 0.8;
+}
+
+.login {
+background-color: white;
+border: 1px solid #c0c0c0;
+height: 400px;
+text-align: center;
+}
+
+.login p {
+  font-weight: bold;
+  color: gray;
+}
+
+/* **********new********** */
+
+.sign-up {
+  background-color: white;
+  border: 1px solid #000;
+  text-align: center;
+  padding: 20px;
+}
