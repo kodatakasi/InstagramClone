@@ -5,3 +5,7 @@
 <p>プロフィール: <%= @user.profile %></p>
 
 <p>プロフィール写真: <%= @user.profile_image %></p>
+
+<%= link_to "新規投稿", new_picture_path, class: 'btn btn-info btn-lg' %>
+
+<%= link_to "投稿一覧", pictures_path, class: 'btn btn-info btn-lg' %>
