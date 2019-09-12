@@ -16,26 +16,32 @@
 
       <%= form_with(model: @user, local: true) do |f| %>  
         <%= f.label :名前 %>
-        <%= f.text_field :name %>
+        <br>
+        <%= f.text_field :name, placeholder: "ユーザー名" %>
         <br>
 
         <%= f.label :メールアドレス %>
-        <%= f.email_field :email %>
+        <br>
+        <%= f.email_field :email, placeholder: "メールアドレス" %>
         <br>
 
         <%= f.label :パスワード %>
-        <%= f.password_field :password %>
+        <br>
+        <%= f.password_field :password, placeholder: "パスワード" %>
         <br>
 
         <%= f.label :パスワード確認 %>
-        <%= f.password_field :password_confirmation %>
+        <br>
+        <%= f.password_field :password_confirmation, placeholder: "パスワード" %>
         <br>
 
         <%= f.label :プロフィール %>
-        <%= f.text_field :profile %>
+        <br>
+        <%= f.text_field :profile, placeholder: "プロフィール" %>
         <br>
 
         <%= f.label :プロフィール写真 %>
+        <br>
         <%= f.file_field :profile_image %>
         <br>
 
