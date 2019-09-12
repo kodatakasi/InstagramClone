@@ -7,4 +7,5 @@ class User < ApplicationRecord
   validates :password, presence: true, length: { minimum: 6 }
   validates :profile, presence: true
   validates :profile_image, presence: true
+  has_many :pictures
 end
