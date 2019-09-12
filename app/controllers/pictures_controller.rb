@@ -17,7 +17,7 @@ class PicturesController < ApplicationController
 
   def create
     @picture = Picture.new(picture_params)
-
+    @picture.user_id = session[:user_id]
     respond_to do |format|
       if @picture.save
         format.html { redirect_to @picture, notice: 'Picture was successfully created.' }
