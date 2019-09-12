@@ -1,11 +1,20 @@
-<h1>Log in</h1>
-<%= form_with(scope: :session, url: sessions_path, local: true) do |f| %>
+<div class="container">
+  <div class="row">
+    <div class="col-md-6 col-md-offset-3 session">
+      <h1>Log in</h1>
+      <%= form_with(scope: :session, url: sessions_path, local: true) do |f| %>
 
-  <%= f.label :email %>
-  <%= f.email_field :email %>
-
-  <%= f.label :password %>
-  <%= f.password_field :password %>
-
-  <%= f.submit "Log in" %>
-<% end %>
+        <br>
+        <%= f.label :email %>
+        <br>
+        <%= f.email_field :email, placeholder: "メールアドレス" %>
+        <br>
+        <%= f.label :password %>
+        <br>
+        <%= f.password_field :password, placeholder: "パスワード" %>
+        <br><br>
+        <%= f.submit "Log in" %>
+      <% end %>
+    </div>
+  </div>
+</div>
