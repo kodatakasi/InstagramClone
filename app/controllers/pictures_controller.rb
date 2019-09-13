@@ -1,8 +1,10 @@
 class PicturesController < ApplicationController
   before_action :set_picture, only: [:show, :edit, :update, :destroy]
-  before_action :authenticate_user, onry: [:index, :show, :new, :create, :update, :destroy]
+  before_action :authenticate_user, only: [:index, :show, :new, :create, :update, :destroy]
+  before_action :current_user
   def index
     @pictures = Picture.all
+    @user = User.find_by(params[:id])
   end
 
   def show
