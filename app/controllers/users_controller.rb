@@ -1,6 +1,6 @@
 class UsersController < ApplicationController
   before_action :authenticate_user, only: [:index, :show, :create, :edit, :update]
-  before_action :current_user
+  before_action :current_user, only: [:show, :edit, :update]
   def top
   end
   
