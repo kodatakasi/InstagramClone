@@ -15,6 +15,7 @@ gem 'bootsnap', '>= 1.1.0', require: false
 gem 'carrierwave'
 gem 'mini_magick'
 gem 'faker'
+gem 'font-awesome-rails'
 
 group :development, :test do
   gem 'dotenv-rails'

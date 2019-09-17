@@ -7,7 +7,7 @@
 
       <p>プロフィール: <%= @user.profile %></p>
 
-      <p>プロフィール写真: <%= image_tag @user.profile_image.url %></p>
+      <p>プロフィール写真: <%= image_tag @user.profile_image.url, class: 'thumbnail_img' %></p>
 
       <% if @current_user.id == @user.id %>
         <%= link_to "新規投稿", new_picture_path, class: 'btn btn-info btn-lg' %>
