@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>InstagramClone</title>
+    <title>Photograph(InstagramClone)</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
@@ -16,7 +16,12 @@
           <%= content_tag(:div, value, class: "#{key}") %>
         <% end %>
         <div class="row text-left">
+          <div class="col-md-1">
           <%= fa_icon 'camera-retro 4x' %>
+          </div>
+          <div class="col-md-1">
+          <h2>Photograph</h2>
+          </div>
         </div>
         <div class="row text-right">
           <% if logged_in? %>

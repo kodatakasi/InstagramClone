@@ -2,14 +2,14 @@
   <div class="row pictures">
     <p id="notice"><%= notice %></p>
 
-    <h1 class="title col-md-6 col-md-offset-3">Pictures</h1>
+    <h1 class="title col-md-6 col-md-offset-3">Photo</h1>
 
     <table class="table table-hover ">
       <thead>
         <tr>
-          <th>Image</th>
-          <th>Content</th>
-          <th>User</th>
+          <th>Photo</th>
+          <th>コメント</th>
+          <th>投稿者</th>
           <th colspan="3"></th>
         </tr>
       </thead>
@@ -20,14 +20,14 @@
             <td><%= image_tag picture.image.url %></td>
             <td><%= picture.content %></td>
             <td><%= picture.user.name %></td>
-            <td><%= link_to 'Show', picture %></td>
+            <td><%= link_to 'Show', picture, class: 'btn btn-primary' %></td>
           </tr>
         <% end %>
       </tbody>
     </table>
 
     <br>
-    <%= link_to 'New Picture', new_picture_path %>
-    <%= link_to 'My Page', user_path(@user.id) %>
+    <%= link_to 'New Picture', new_picture_path, class: 'btn btn-primary' %>
+    <%= link_to 'My Page', user_path(@user.id), class: 'btn btn-primary'%>
   </div>
 </div>
