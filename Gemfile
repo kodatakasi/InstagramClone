@@ -16,9 +16,10 @@ gem 'carrierwave'
 gem 'mini_magick'
 gem 'faker'
 gem 'font-awesome-rails'
+gem 'fog-aws'
+gem 'dotenv-rails'
 
 group :development, :test do
-  gem 'dotenv-rails'
   gem 'pry-rails'
   gem 'better_errors'
   gem 'binding_of_caller'
