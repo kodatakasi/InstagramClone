@@ -1,6 +1,7 @@
 lock '3.6.0'
 
 set :application, 'photograph'
+
 set :repo_url, 'https://github.com/kodatakasi/InstagramClone'
 
 set :branch, ENV['BRANCH'] || 'master'
