@@ -19,7 +19,7 @@ gem 'faker'
 gem 'font-awesome-rails'
 gem 'fog-aws'
 gem 'dotenv-rails'
-gem 'unicorn'
+gem 'unicorn', '5.4.1'
 gem 'mini_racer', platforms: :ruby
 
 group :development, :test do
